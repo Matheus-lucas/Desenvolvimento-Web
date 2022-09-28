@@ -3,6 +3,28 @@
     background-color: red;
 }
 
-.menu{
-    text-align:left top;
-}  
+.menu {
+    text-align: left top;
+}
+
+.flutuante {
+    background: blue;
+    border: solid gray;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin:10px;
+}
+
+/* Os flutuantes se comportar como se estivessem livres */
+.flutuante1 {
+    background: red;
+    border: solid gray;
+    width: 150px;
+    height: 150px;
+
+    /* criando um janela flutuante */
+    float: left;
+    margin:10px;
+   
+}
