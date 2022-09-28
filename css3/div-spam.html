@@ -1,0 +1,73 @@
+<!doctype html>
+
+<head>
+    <title>
+        DIVs e Spans
+    </title>
+</head>
+
+<!-- Internal style sheet em CSS -->
+<style type="text/css">
+    #topo {
+        background:blue;
+    }
+
+    #conteudo{
+        background:red;
+    }
+
+    #rodape{
+        background:green;
+    }
+
+    #assinatura{
+        background:pink;
+    }
+
+    .produto{
+        background:gray;
+
+        /* Definindo as margens*/
+        margin:10px;
+    }
+
+</style>
+
+<body>
+
+    <!-- Divs se organizam em linhas (um abaixo do outro)-->
+    <div id="topo">
+        <img src="amazon.png">
+
+        <ul>
+            <li>Home</li>
+            <li>Produtos</li>
+            <li>Contato</li>
+        </ul>
+    </div>
+
+    <div id="conteudo">
+
+        <div class="produto">
+            Produto 1
+        </div>
+
+        <div class="produto">
+            Produto 2
+        </div>
+
+        <div class="produto">
+
+            Produto 3
+        </div>
+    </div>
+
+    <div id="rodape">
+        Todos os <span class="produto"> direitos</span> reservados
+    </div>
+
+    <!-- Spans se organizam em colunas (um na frente do outro)-->
+    <span>
+        Jamilton
+    </span>
+</body>

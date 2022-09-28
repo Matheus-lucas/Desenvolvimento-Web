@@ -1,0 +1,60 @@
+<!doctype html>
+
+<head>
+    <title>
+        Fontes e Cores
+    </title>
+</head>
+
+<!-- Internal style sheet em CSS -->
+<style type="text/css">
+    .formatacao {
+        font-weight: bold;
+
+        /* Pode ser o nome, o código rgb ou hexadecimal*/
+        color: blue;
+
+        /* Define uma lista de fontes a ser pesquisa, caso o caractere
+        não exista na primeira fonte*/
+        font-family: 'Times New Roman', Times, serif;
+
+        /* Pode ser em:
+        px: 16px é o tamanho padrão
+        %: em relação aos 16px - Ex; 16px = 100%, 32 px= 200% ;
+        em: em relação ao container que está inserido
+        Se o pai estiver com tamanho especifico, será em relação
+        a este tamanho*/
+        /* A ordem de prioridade é a especificidade
+        Ex: Neto -> Filho -> Pai*/
+        font-size: 20px;
+    }
+
+    .formatacao1 {
+        font-size: 16px;
+    }
+
+    .formatacao2 {
+        font-size: 472%;
+    }
+
+    .formatacao3 {
+        font-size: 1.5em;
+    }
+
+    body {
+        border-style: groove;
+        border-width: 5px;
+
+        /* Pode ser o nome, o código rgb ou hexadecimal*/
+        border-color: brown;
+        text-align: center
+    }
+</style>
+
+<body>
+
+    <p class="formatacao">Conteudo</p>
+    <p class="formatacao1">Conteudo</p>
+    <p class="formatacao2">Conteudo</p>
+    <p class="formatacao3">Conteudo</p>
+</body>

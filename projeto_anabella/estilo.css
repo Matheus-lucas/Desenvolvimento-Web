@@ -1,0 +1,57 @@
+body{
+    background-image: url('imagens/fundo.png');
+    width: 900px;
+    position: relative;
+    margin-left:20%;
+    font: 16px Arial, helvetica, sans-serif;
+    text-align: center;
+}
+
+#cabecalho{
+    background-image: url('imagens/capa.png');
+    background-repeat: no-repeat;
+    height: 390px;
+}
+
+.menu{
+    background-color: #c4a1a1c1; 
+    padding: 20px 0px 
+    
+}
+
+.conteudo{
+    background-color: rgb(235, 238, 229);
+    margin-bottom: 0px;   
+}
+
+a{
+    color: rgb(56, 37, 154);
+    font-family: Arial, helvetica, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    font-weight:bolder;
+    text-decoration: none;
+    font-size:20px;
+}
+
+.texto{
+    position: relative;
+    padding: 10px
+}
+
+h2{
+    color:rgb(147, 159, 119);
+}
+
+#rodape{
+    text-align: center;
+    font-weight: bolder;
+}
+
+img{
+
+    position: relative;
+    border-width: 10px;
+    border-color:rgb(209, 210, 205);
+    border-style: solid;
+}
