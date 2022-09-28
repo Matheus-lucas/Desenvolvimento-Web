@@ -12,7 +12,6 @@
     border: solid gray;
     width: 200px;
     height: 200px;
-    float: left;
     margin:10px;
 }
 
@@ -24,7 +23,19 @@
     height: 150px;
 
     /* criando um janela flutuante */
-    float: left;
+    /* float: left; */
     margin:10px;
    
+}
+
+.clear{
+    /* limpa os elementos flutuantes */
+    /* Clear: left(limpa a esquerda), right(direita)
+    both(ambos), none(nenhum) */
+    clear: left
+}
+
+#principal{
+    border: 1px solid red;
+    background-color: purple;
 }
