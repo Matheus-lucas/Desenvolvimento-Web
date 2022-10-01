@@ -1,0 +1,111 @@
+<!<!DOCTYPE html>
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <title> Posicionamento(static, relative, absolute e fixed</title>
+       
+
+        <style type="text/css">
+            body {
+                background: #0007cf;
+            }
+
+
+            #container {
+                background: #FFF;
+                width: 800px;
+
+                /* Auto centraliza o container */
+                margin: 10px auto;
+                position: relative
+            }
+
+
+            /* Posição padrão de h1 e p é estática */
+            p{
+                border:1px solid red;
+                width: 300px;
+              
+            }
+
+            h1{
+                position:static;
+                
+            }
+
+            /* Permite o deslocamento em referência a posição inicial do elemento  */
+            /* Lembrar que: negativo( pra cima ou para esquerda)
+            positivo(para baixo ou para direita) */
+            .relative{
+                position: relative;
+                border: 1px solid red;
+                width:300px;
+                top: 30px;
+                left: 150px;
+            }
+
+            /* Define a posição como absoluta, ou seja, pelo comprimento do container */
+            .absolute{
+                position: absolute;
+                border: 1px solid red;
+                width:300px;
+                top: 300px;
+            }
+
+            /* Define a posição como fixa, ou seja, pelo comprimento total
+            da tela*/
+            .fixed{
+                position: fixed;
+                border: 1px solid red;
+                width:300px;
+                top: 450px;
+            }
+
+
+
+
+        </style>
+    </head>
+
+    <body>
+
+        <div id="container">
+            <h1>
+                Posicionamento
+            </h1>
+
+            <p>
+                P1 asdasdsadsaofdmao sfmsoadsaodmsadasodas dosandoadnaso
+                d.pdamdasmdoasmdoasd
+            </p>
+
+            <p class="relative">
+                P2 asdasdsadsaofdmaos fmsoadsaodmsadasodas dosandoadnaso
+                d.pdamdasmdoasmdoasd
+            </p>
+
+            <p class="absolute">
+                P3 asdasdsadsaofdmaos fmsoadsaodmsadasodas dosandoadnaso
+                d.pdamdasmdoasmdoasd
+            </p>
+
+
+            <p class="fixed">
+                P4 asdasdsadsaofdmaos fmsoadsaodmsadasodas dosandoadnaso
+                d.pdamdasmdoasmdoasd
+            </p>
+
+
+
+
+        </div>
+
+
+    </body>
+
+    </html>
