@@ -1,0 +1,74 @@
+/* Limpar formatação padrão */
+*{
+    margin:0;
+    padding: n0;
+}
+
+
+/* Configurando o body */
+body{
+
+    /* Aumentando a fonte */
+    font-size: 1em;
+
+    /* Fundo branco */
+    background-color:#e6e6e6;
+
+    /* Fontes */
+    font-family: "trebuchet MS","helvetica",sans-serif;
+}
+
+/* COnfigurando o cabeçalho */
+#area-cabecalho{
+
+    /* Fundo amarelo da logo */
+    background-color:#f7b600;
+
+    /* Espaçamento */
+    padding: 15px;
+
+    /* Centralizando o texto */
+    text-align: center;
+}
+
+/* Configurando os links */
+a{
+    /* Removando o sublinhado */
+    text-decoration: none;
+}
+
+/* Configurando os links */
+a:link, a:visited{
+    /* Cor da fonte branca */
+    color: #fff;
+}
+
+
+/* Configurando os links quando o cursor passa*/
+a:hover{
+
+    /* Fundo branco */
+    background-color: white;
+
+    /* Fonte amarela */
+    color:#f7b600;
+
+    /* Espaçamento interno */
+    padding: 10px;
+}
+
+/* Espaçamento da interno da logo */
+#area-logo,#area-logo{
+    padding: 10px;
+}
+
+/* Texto branco da logo */
+#branco{
+    color:white;
+}
+
+/* Configurando o título */
+h1{
+    color:#4e4e4e;
+    font-size:2.5em;
+}
