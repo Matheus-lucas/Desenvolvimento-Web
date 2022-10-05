@@ -1,28 +1,32 @@
+/* 
+Abertura principal 
+*/
+
 /* Limpar formatação padrão */
-*{
-    margin:0;
-    padding: n0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 
 /* Configurando o body */
-body{
+body {
 
     /* Aumentando a fonte */
     font-size: 1em;
 
     /* Fundo branco */
-    background-color:#e6e6e6;
+    background-color: #e6e6e6;
 
     /* Fontes */
-    font-family: "trebuchet MS","helvetica",sans-serif;
+    font-family: "trebuchet MS", "helvetica", sans-serif;
 }
 
 /* COnfigurando o cabeçalho */
-#area-cabecalho{
+#area-cabecalho {
 
     /* Fundo amarelo da logo */
-    background-color:#f7b600;
+    background-color: #f7b600;
 
     /* Espaçamento */
     padding: 15px;
@@ -31,45 +35,150 @@ body{
     text-align: center;
 }
 
+
+
+/* Espaçamento da interno da logo */
+#area-logo,#area-menu {
+    padding: 10px;
+}
+
+#area-principal {
+    /* Definindo um tamanho fixo para área principal */
+    width:920px;
+
+    /* Centralizando o conteúdo */
+    margin: 0 auto;
+
+    /* Aplicando espaçamento na área principal */
+    padding:15px;
+}
+
+#area-postagens{
+    width:660px;
+
+    /* Colocando a área como flutuante a esquerda */
+    float:left;
+   
+}
+
+#area-lateral{
+    width:240px;
+    
+    /* Colocando a área como flutuante a direita */
+    float:right;
+}
+
+.postagem{
+    padding:20px;
+    margin-bottom:20px;
+    background:white;
+}
+
+.conteudo-lateral{
+    background-color: white;
+    padding:10px;
+    margin-bottom:20px;
+}
+
+#rodape{
+    /* Limpando o buffer para o rodapé 
+    não ficar atrás do conteúdo principal */
+    clear:both;
+
+    padding:15px;
+
+    background-color:#CCC;
+    text-align:center;
+
+}
+
+/* Texto branco da logo */
+#branco {
+    color: white;
+}
+
+.postagem-lateral{
+    font-size:0.8em;
+    padding:5px;
+    border-bottom: 1px dotted #CCC;
+}
+
+/* Final principal */
+
+/* 
+Abertura Links 
+*/
+
 /* Configurando os links */
-a{
+a {
     /* Removando o sublinhado */
-    text-decoration: none;
+    color: #f7b600;
 }
 
 /* Configurando os links */
-a:link, a:visited{
+a:hover {
+    /* Removando o sublinhado */
+    text-decoration: underline;
+}
+
+/* Configurando os links dentro da area-cabecalho com seletores */
+#area-cabecalho a:link,
+#area-cabecalho a:visited {
     /* Cor da fonte branca */
     color: #fff;
     padding: 10px;
 }
 
 
-/* Configurando os links quando o cursor passa*/
-a:hover{
+/* Configurando os links dentro da area-cabecalho com seletores
+ quando o cursor passa*/
+#area-cabecalho a:hover {
 
     /* Fundo branco */
     background-color: white;
 
     /* Fonte amarela */
-    color:#f7b600;
+    color: #f7b600;
 
     /* Espaçamento interno */
     padding: 10px;
+    text-decoration:none;
 }
 
-/* Espaçamento da interno da logo */
-#area-logo,#area-logo{
-    padding: 10px;
-}
-
-/* Texto branco da logo */
-#branco{
-    color:white;
-}
+/* Final Links */
 
 /* Configurando o título */
-h1{
-    color:#4e4e4e;
-    font-size:2.5em;
+h1 {
+    color: #4e4e4e;
+    font-size: 2.5em;
+}
+
+
+/* A soma da área de postagens com o menu lateral é 900px, 
+deixando 20px para as divisões */
+
+/* Formatando o título da postagem */
+h2{
+    color:#f7b600;
+}
+
+h3{
+    color:#d6c5c5;
+    background:rgb(161, 90, 90);
+    padding:5px;
+}
+
+
+
+.data-postagem{
+    font-size:0.8em;
+
+    /* Aplicando uma borda inferior */
+    border-bottom: solid #f4f4f4;
+    padding-bottom:10px;
+    margin-bottom:10px;
+
+    /* Fazendo a borda ocupar todo o espaça da div */
+    display:block;
+
 }
