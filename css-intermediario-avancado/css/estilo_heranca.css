@@ -1,0 +1,41 @@
+
+/* Elementos dentro da tag herdam as configurações */
+body {
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    /* Border não é herdado, ele vai ser aplicado ao elemetno como um todo,
+    mas não ao elementos filhos */
+    /* Ex: o boy terá uma borda, mas não cada div interna do body */
+    /* O mesmo vale para o background */
+    border: 2px solid gray;
+}
+
+/* Para seletores iguais, o último definido tem prioridade */
+p {
+    /* Important define a priodade do css */
+    color: aquamarine  !important;
+}
+
+p {
+    color: yellowgreen;
+}
+
+/* Quando mais especifíco, maior a prioridade */
+/* id > class > tag > * */
+*{
+    color:rebeccapurple;
+}
+
+/* Para especificar classes de tags: tag.class juntos */
+h2.verde {
+    color:green;
+
+}
+
+/* Para especificar ids de tags: tag#id juntos */
+/* id é mais especifico que class */
+h2#amarelo{
+    color:blanchedalmond;
+}
+
