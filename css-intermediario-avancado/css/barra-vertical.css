@@ -34,9 +34,13 @@ ul a{
 
     /* Convertendo os links para o modo bloco */
     display:block;
-    background: url(../../imagens/imagens-barra/menu.png) no-repeat left bottom;
+
+    /* Caso a imagem não carregue, usa a cor de fundo */
+    background: #f7b600 url(../../imagens/imagens-barra/menu.png) no-repeat left bottom;
 }
 
 a:hover{
     background-position: right bottom;
+    background-color:#f99200;
+    color:#fff;
 }
