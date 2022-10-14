@@ -1,1 +1,49 @@
 /* Barra de navegação horizontal */
+
+ul {
+    border: 1px solid red;
+    margin: opx;
+    padding: 0px;
+    list-style: none;
+    width: 720px;
+    background: #159cb0 url(../../imagens/barra-horizontal/fundo-horizontal.png) repeat-x;
+    
+    /* Transofrma a ul numa caixa flutuante para a imagem aparecer */
+    float: left;
+
+}
+
+/*  Seleciona lis dentro da ul */
+ul li{
+    float: left;
+}
+
+/*  Seleciona os links dentro da ul */
+ul a{
+    /* Espaçamento interno */
+    display:block;
+    padding:0 2em;
+    line-height:2em;
+    text-decoration:none;
+    color:white;
+
+    /* Definindo a imagem do divisor pros links */
+    background: url(../../imagens/barra-horizontal/divisor.png) repeat-y;
+}
+
+/* Removendo a primeira barra */
+ul .primeiro a{
+    background:none;
+}
+
+ul a:hover{
+    color:#085662;
+    background:#44cade;
+}
+
+/* Criando um selector para a barra de navegação vertical de cada página */
+#home #barra-vertical .home a{
+    color:white;
+    font-weight: bolder;
+    background:#44cade;
+}
