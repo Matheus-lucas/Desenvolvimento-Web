@@ -5,12 +5,16 @@ body {
 }
 
 #container {
-    width: 720px;
+    /* Para o efeito de coluna falsa layout precisa ser fixo */
+    /* width: 720px; */
+    width:960px;
     margin: 0 auto;
     background: #fff;
 
     /* Definindo um tamanho mínimo pra janela */
     min-width: 720px;
+
+    background:#fff url(../../imagens/imagens-fluidas/coluna.png) repeat-y left top;
 }
 
 #marca {
@@ -66,7 +70,7 @@ img.img-noticia{
     float: left;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: #d1d1d1;
+    /* background: #d1d1d1; */
 }
 
 #navegacao ul {
