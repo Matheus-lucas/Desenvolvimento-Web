@@ -7,7 +7,6 @@ ul {
     Removendo o list style type (marcador a frente dos itens)
     list-style-type: none;
 }
-
 li {
     padding: 5px 20px;
 
