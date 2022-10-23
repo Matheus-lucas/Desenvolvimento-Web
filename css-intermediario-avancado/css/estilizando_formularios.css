@@ -1,0 +1,39 @@
+body{
+    font-family: "trebuchet", helvetica, sans-serif;
+}
+
+fieldset {
+    margin: 1em 0em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+}
+
+legend{
+    font-weight: bold;
+}
+
+label{
+    display: block;
+    cursor: pointer;
+}
+
+/* Selecionando apenas os input com type=text */
+/* input[text]{ */
+input{
+    width:20em;
+}
+
+/*  Fazendo da forma mais antiga */
+input.radio, input.checkbox, input.submit{
+    width: auto;
+}
+
+textarea{
+    width:20em;
+    height:10em;
+}
+
+.radio{
+    margin-right: 1em;
+}
