@@ -1,0 +1,39 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Helveticas, sans-serif;
+}
+
+table{
+    width:600px;
+
+    /* Juntando as bordas da tabela */
+    /* Padrão é separate(separado) */
+    border-collapse: collapse;
+}
+
+th,td{
+    border: 2px solid black;
+    padding: 7px;
+}
+
+th{
+    /* Transformando os caracteres em maiuscúlos */
+    text-transform:uppercase;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #111;
+    text-align: left;
+
+    /* Reduzindo o tamanho da fonte */
+    font-size: 90%;
+
+    /* Aumentando o espaçamento entre os caracteres */
+    letter-spacing:0.1em;
+}
+
+tr.alternado{
+    background-color: #efefef; 
+}
+
+/* Dando destaque a tr selecionada */
+tr:hover{
+    background-color: #c3e6e5;
+}
