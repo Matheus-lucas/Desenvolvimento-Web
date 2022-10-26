@@ -1,0 +1,23 @@
+/* Arrendondamento de Imagens */
+.caixa{
+    width:400px;
+    background: #dedede url(../../imagens/imagens-arredondamento/fundo-arredondamento.png) no-repeat left top;
+   
+}
+
+.caixa h2{
+    background: #dedede url(../../imagens/imagens-arredondamento/topo2.png) no-repeat left top;
+
+    padding: 10px 20px 0 20px;
+}
+
+.caixa p{
+    padding: 0px 20px 20px 20px;
+
+}
+
+.caixa .ultimo{
+    background: url(../../imagens/imagens-arredondamento/baixo2.png) no-repeat left bottom;
+    width: 400px;
+    height: 10px;
+}
