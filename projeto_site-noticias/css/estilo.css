@@ -62,53 +62,164 @@ ul {
     color: #69001d;
 }
 
-body.home #navegacao a#home, 
-body.brasil #navegacao a#brasil, 
-body.internacional #navegacao a#internacional, 
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
 body.economia #navegacao a#economia,
 body.ciencia #navegacao a#ciencia,
-body.fotos #navegacao a#fotos
-{
+body.fotos #navegacao a#fotos {
     color: #fff;
     background: #de003e;
     cursor: text;
 }
 
-
-#conteudo{
-    background: #f5f5f5;
-    margin-top:60px;
+/* Layout da área lateral */
+#lateral {
+    float: left;
+    width: 180px;
+    margin: 0 0 20px -750px;
 }
 
-#primario{
-    float:left;
-    background: blue;
-    width:270px;
+#conteudo {
+    background: #f5f5f5;
+    margin-top: 60px;
+}
+
+
+/* Layouts das colunas */
+/* Configurando o Layout para cada página */
+/* As páginas tem diferentes número de colunas */
+
+/* Início 3 colunas */
+#primario {
+    width: 270px;
+    float: left;
 
     /* Margin direita: Tamanho da barra lateral(180) + espaçamento(15)*/
     margin: 0 0 20px 195px;
 }
-#secundario{
-    float:left;
-    background: #881b1b;
-    width:270px;
+
+#secundario {
+    float: left;
+    width: 270px;
+    /* Margin direita: Tamanho da barra lateral(180) + espaçamento(15)*/
     margin: 0 0 20px 15px;
 }
 
-#lateral{
-    float:left;
-    background: #186a27;
-    width:180px;
-    margin: 0 0 20px -750px;
+#duas-colunas #primario {
+    width: 550px;
+
+    /* Margin direita: Tamanho da barra lateral(180) + espaçamento(15)*/
+    margin: 0 0 20px 195px;
+}
+
+#uma-coluna #primario {
+
+    width: 750px;
+
+    /* Margin direita: Tamanho da barra lateral(180) + espaçamento(15)*/
+    margin: 0 0 20px 0px;
 }
 
 
-#container-rodape{
+/* Fim dos Layouts das colunas */
+
+#container-rodape {
     background: #294c71;
     padding: 20px;
 }
-#rodape{
-    width:750px;
-    margin:0 auto;
+
+#rodape {
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+/* Layout da caixa */
+.caixa {
+    background: #f3f3f3 url(../imagens/fundo-caixa.png);
+    margin: 10px 0 10px 0;
+    padding: 5px;
+}
+
+
+
+.caixa-conteudo {
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#lateral ul a {
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover {
+    color: #a1a1a1;
+    padding-left: 20px;
+    background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
+}
+
+/* Fim do layout das caixas */
+
+/* FOrmatando formulários */
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {
+    padding: 5px;
+    width: 125px;
+    font-size: 0.9em;
+    background-color: #fff;
+}
+
+input.submit {
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+}
+
+/* FIm formulários*/
+
+/* Formatando imagens */
+img.imagem-principal {
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+
+/* Fim formataçaõ imAGEM */
+
+/* foRMATANDO CABEÇALHOS */
+
+h2 {
+    font-size: 1em;
+    background: #394c71;
+    color: white;
+    padding: 5px;
+}
+
+h3 {
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3 {
+    background: #b10333;
     color:#fff;
+}
+
+.entrevista h3{
+    color:#fff;
+    background: #de0333;
 }
